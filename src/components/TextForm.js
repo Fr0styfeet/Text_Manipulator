@@ -25,11 +25,19 @@ export default function TextForm() {
         setText(newText);
     }
     const handleSen=()=>{
-        let newText=text.toLowerCase().split(' ').map(function (word) {
-            return (word.charAt(0).toUpperCase() + word.slice(1));
-        }).join(' ');
-        
-        setText(newText);
+        const sentences = text.split('. ');
+        const sentenceCaseSentences = sentences.map((sentence) => {
+        if (sentence.trim() === '') {
+          return sentence;
+        }
+    
+        const firstLetter = sentence.charAt(0).toUpperCase();
+        const restOfSentence = sentence.slice(1).toLowerCase();
+        return firstLetter + restOfSentence;
+      });
+        const sentenceCaseParagraph = sentenceCaseSentences.join('. ');
+    
+        setText(sentenceCaseParagraph);
     }
     const [text, setText] = useState(""); //destructuring
   return (
