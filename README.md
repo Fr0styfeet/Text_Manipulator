@@ -1,4 +1,4 @@
-Deployment : https://64ef8f669b1a816915468b6a--euphonious-kataifi-158456.netlify.app
+Deployment : https://anytext-manipulator.netlify.app
 
 # Getting Started with Create React App
 
