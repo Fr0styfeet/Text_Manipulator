@@ -112,7 +112,7 @@ export default function TextForm(props) {
       <button type="button" className="btn btn-info mx-2" onClick={handleCopy}>
         Copy text
       </button>
-      <button type="button" className="btn mx-2" style={{ backgroundColor: 'pink' }} onClick={handleSpace}>Remove Extra Spaces</button>
+      <button type="button" className="btn mx-2 my-2" style={{ backgroundColor: 'pink' }} onClick={handleSpace}>Remove Extra Spaces</button>
       <button type="button" className="btn btn-danger mx-2 my-2" onClick={handleClear}>
         Clear
       </button>
